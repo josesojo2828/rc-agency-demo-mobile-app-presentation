@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+    --font-sans: "Inter", system-ui, sans-serif;
+    --color-primary: #6366f1;
+    /* Indigo-500 */
+    --color-primary-content: #ffffff;
+    --color-secondary: #a855f7;
+    /* Purple-500 */
+    --color-secondary-content: #ffffff;
+    --color-accent: #ec4899;
+    /* Pink-500 */
+    --color-accent-content: #ffffff;
+    --color-neutral: #1e293b;
+    /* Slate-800 */
+    --color-base-100: #0f172a;
+    /* Slate-900 (Dark Background) */
+    --color-base-200: #1e293b;
+    /* Slate-800 */
+    --color-base-300: #334155;
+    /* Slate-700 */
+    --color-base-content: #f8fafc;
+    /* Slate-50 */
+}
+
+:root {
+    color-scheme: light dark;
+}
+
+body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar for hidden utility */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
